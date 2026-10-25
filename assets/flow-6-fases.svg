@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Flujo modular de 6 fases de EntrevisLab</title>
+  <desc id="d">Diagnóstico, Escáner de ofertas, Hoja de ruta, Gimnasio guiado, Simulador real y Dictamen, con bloqueo secuencial por hashes djb2.</desc>
+  <!-- Copyright (c) 2026 Lian Monsalve (EntrevisLab). Paleta oficial: DESIGN.md -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#060A12"/><stop offset="1" stop-color="#0D1526"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/><stop offset="0.5" stop-color="#818CF8"/><stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .h { font: 800 13px 'JetBrains Mono',Consolas,monospace; letter-spacing: 1px; }
+    .l { font: 700 15px 'Plus Jakarta Sans','Segoe UI',Helvetica,Arial,sans-serif; fill: #F8FAFC; }
+    .s { font: 500 11.5px 'Inter','Segoe UI',Helvetica,Arial,sans-serif; fill: #CBD5E1; }
+    .cap { font: 600 12px 'JetBrains Mono',Consolas,monospace; fill: #CBD5E1; opacity: .75; }
+    .flow { stroke-dasharray: 8 8; animation: dash 1.2s linear infinite; }
+    .card { opacity: 0; animation: rise .8s cubic-bezier(.16,1,.3,1) forwards; }
+    .c1 { animation-delay: .05s } .c2 { animation-delay: .2s } .c3 { animation-delay: .35s }
+    .c4 { animation-delay: .5s } .c5 { animation-delay: .65s } .c6 { animation-delay: .8s }
+    @keyframes dash { to { stroke-dashoffset: -16 } }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px) } to { opacity: 1; transform: translateY(0) } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+  </style>
+
+  <rect width="1200" height="250" rx="20" fill="url(#bg)"/>
+  <text x="40" y="38" class="cap">FLUJO SECUENCIAL · BLOQUEO POR HASH djb2 · ESTADO entrevislab_state_v2</text>
+
+  <!-- Pista y conectores -->
+  <path id="track" d="M100 135 H1100" stroke="#CBD5E1" stroke-opacity="0.12" stroke-width="6" stroke-linecap="round"/>
+  <path class="flow" d="M100 135 H1100" stroke="url(#track)" stroke-width="3" fill="none"/>
+  <circle r="7" fill="#F8FAFC">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M100 135 H1100"/>
+    <animate attributeName="fill" values="#38BDF8;#2563EB;#818CF8;#10B981" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Fase 1 · navy -->
+  <g class="card c1" transform="translate(28 80)">
+    <rect width="144" height="112" rx="14" fill="#0D1526" stroke="#38BDF8" stroke-width="2"/>
+    <rect width="144" height="112" rx="14" fill="none" stroke="#38BDF8" stroke-width="5" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.06;0.16;1" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="16" y="28" class="h" fill="#38BDF8">FASE 1</text>
+    <text x="16" y="54" class="l">Diagnóstico</text>
+    <text x="16" y="76" class="s">Reloj 90 s</text>
+    <text x="16" y="94" class="s">Radar de 5 ejes</text>
+  </g>
+  <!-- Fase 2 · primary -->
+  <g class="card c2" transform="translate(228 80)">
+    <rect width="144" height="112" rx="14" fill="#16213A" stroke="#2563EB" stroke-width="2"/>
+    <rect width="144" height="112" rx="14" fill="none" stroke="#2563EB" stroke-width="5" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.06;0.16;1" dur="6s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="16" y="28" class="h" fill="#60A5FA">FASE 2</text>
+    <text x="16" y="54" class="l">Escáner</text>
+    <text x="16" y="76" class="s">Multi-ofertas</text>
+    <text x="16" y="94" class="s">Keywords + Seniority</text>
+  </g>
+  <!-- Fase 3 · primary -->
+  <g class="card c3" transform="translate(428 80)">
+    <rect width="144" height="112" rx="14" fill="#16213A" stroke="#2563EB" stroke-width="2"/>
+    <rect width="144" height="112" rx="14" fill="none" stroke="#2563EB" stroke-width="5" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.06;0.16;1" dur="6s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="16" y="28" class="h" fill="#60A5FA">FASE 3</text>
+    <text x="16" y="54" class="l">Hoja de Ruta</text>
+    <text x="16" y="76" class="s">Micro-learning</text>
+    <text x="16" y="94" class="s">adaptativo</text>
+  </g>
+  <!-- Fase 4 · action -->
+  <g class="card c4" transform="translate(628 80)">
+    <rect width="144" height="112" rx="14" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+    <rect width="144" height="112" rx="14" fill="none" stroke="#818CF8" stroke-width="5" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.06;0.16;1" dur="6s" begin="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="16" y="28" class="h" fill="#818CF8">FASE 4</text>
+    <text x="16" y="54" class="l">Gimnasio</text>
+    <text x="16" y="76" class="s">Termómetro en vivo</text>
+    <text x="16" y="94" class="s">Evidencia 0-3</text>
+  </g>
+  <!-- Fase 5 · action -->
+  <g class="card c5" transform="translate(828 80)">
+    <rect width="144" height="112" rx="14" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+    <rect width="144" height="112" rx="14" fill="none" stroke="#818CF8" stroke-width="5" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.06;0.16;1" dur="6s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="16" y="28" class="h" fill="#818CF8">FASE 5</text>
+    <text x="16" y="54" class="l">Simulador</text>
+    <text x="16" y="76" class="s">4 filtros reales</text>
+    <text x="16" y="94" class="s">Voz en vivo</text>
+  </g>
+  <!-- Fase 6 · emerald -->
+  <g class="card c6" transform="translate(1028 80)">
+    <rect width="144" height="112" rx="14" fill="#064E3B" stroke="#10B981" stroke-width="2"/>
+    <rect width="144" height="112" rx="14" fill="none" stroke="#10B981" stroke-width="5" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.06;0.16;1" dur="6s" begin="5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="16" y="28" class="h" fill="#10B981">FASE 6</text>
+    <text x="16" y="54" class="l">Dictamen</text>
+    <text x="16" y="76" class="s">Alineación ATS</text>
+    <text x="16" y="94" class="s">Guion .txt</text>
+  </g>
+
+  <text x="1160" y="228" text-anchor="end" class="cap">Bucle de afinación continua: Fase 6 → Fase 4</text>
+</svg>

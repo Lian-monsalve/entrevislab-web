@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 16" width="1200" height="16" role="img" aria-label="Separador animado EntrevisLab">
+  <!-- Copyright (c) 2026 Lian Monsalve (EntrevisLab). Paleta oficial: DESIGN.md -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="0.8" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .dot { animation: blink 2.4s ease-in-out infinite; }
+    .d2 { animation-delay: .4s } .d3 { animation-delay: .8s } .d4 { animation-delay: 1.2s }
+    @keyframes blink { 0%, 100% { opacity: .35 } 50% { opacity: 1 } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="0" y="7" width="1200" height="2" rx="1" fill="url(#g)"/>
+  <rect x="-160" y="6" width="160" height="4" rx="2" fill="#F8FAFC" opacity="0.6">
+    <animate attributeName="x" from="-160" to="1200" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+  <circle class="dot" cx="570" cy="8" r="4" fill="#38BDF8"/>
+  <circle class="dot d2" cx="590" cy="8" r="4" fill="#2563EB"/>
+  <circle class="dot d3" cx="610" cy="8" r="4" fill="#818CF8"/>
+  <circle class="dot d4" cx="630" cy="8" r="4" fill="#10B981"/>
+</svg>
