@@ -1,4 +1,4 @@
-# 🎯 EntrevisLab — Caso de Estudio de Ingeniería de Software & Arquitectura DevSecOps
+# 🎯 EntrevisLab
 
 <p align="center">
   <img src="assets/banner-hero.svg" alt="EntrevisLab Banner Hero" width="100%">
@@ -24,7 +24,7 @@
 
 ---
 
-## 📌 1. Resumen Ejecutivo para Reclutadores y Líderes Técnicos
+## 📌 1. Resumen Ejecutivo
 
 **EntrevisLab** es un sistema de ingeniería *Frontend-Only / Zero-Backend* diseñado para resolver la asimetría entre el conocimiento técnico de un candidato y su capacidad para estructurar evidencia verbal verificable bajo presión temporal durante procesos de selección (*Screening, Assessment Grupal, Entrevista Conductual HR y Entrevista Técnica con Hiring Manager*).
 
