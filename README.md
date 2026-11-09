@@ -24,7 +24,7 @@
 
 ---
 
-## 📌 1. Resumen Ejecutivo
+## 📌 1. Resumen Ejecutivo de Ingeniería & Arquitectura de Producto
 
 **EntrevisLab** es un sistema de ingeniería *Frontend-Only / Zero-Backend* diseñado para resolver la asimetría entre el conocimiento técnico de un candidato y su capacidad para estructurar evidencia verbal verificable bajo presión temporal durante procesos de selección (*Screening, Assessment Grupal, Entrevista Conductual HR y Entrevista Técnica con Hiring Manager*).
 
